@@ -1,11 +1,14 @@
 \documentclass[12pt]{article}
 \usepackage{apacite,rotating,array,booktabs,ctable,graphicx,tabularx,amsfonts, amsmath, amsthm,url,multirow,verbatim}
 \usepackage[top=1in,right=1in,left=1in,bottom=1in]{geometry}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palatino needs more leading (space between lines)
 \usepackage[T1]{fontenc}
-\usepackage{cmbright}
 \usepackage{setspace}
 \usepackage{lineno}
 \linenumbers
+
+
 
 \newcommand{\putbib}[1]{
 \bibliographystyle{apacite}
@@ -20,7 +23,7 @@
 \section{Background}
 This work considers the application of the methodology described in \citeA{domingue2013} to the model selection framework presented by \citeA{torres2012} as an alternative, and more generally applicable, method for identifying the correct generating model of a dataset.
 
-In their model selection framework \citeA{torres2012} arrange a set of latent variable models, including latent class models (\textsc{lca}; Lazarasfeld & Henry, 1968), ordered latent class models (\textsc{olca}; Croon, 1990), latent class Rasch models (\textsc{lcr}; Formann, 1985) and Rasch models (\textsc{rsh}; Rasch, 1960), according to their assumed latent structure such that progressively more stringent monotonicity and scale assumptions are placed on the latent variable. 
+In their model selection framework \citeA{torres2012} arrange a set of latent variable models, including latent class models (\textsc{lca}; Lazarasfeld \& Henry, 1968), ordered latent class models (\textsc{olca}; Croon, 1990), latent class Rasch models (\textsc{lcr}; Formann, 1985) and Rasch models (\textsc{rsh}; Rasch, 1960), according to their assumed latent structure such that progressively more stringent monotonicity and scale assumptions are placed on the latent variable. 
 
 \begin{figure}
 \centering
@@ -42,7 +45,7 @@ The methodology developed by \citeA{domingue2013} and implemented in \citeA{conj
 
 \subsection{Examining Cancelation Axioms}
 
-The Tenable Assessment framework \citep{torres2012} leads to several natural hypotheses regarding potential violations to the \textsc{acm} cancelation axioms:
+The Tenable Assessment framework \citeNP{torres2012} leads to several natural hypotheses regarding potential violations to the \textsc{acm} cancelation axioms:
 \begin{enumerate}
 \item The UN model, since it can be fit to purely nominal data, should yield the most violations.
 \item At least superficially, there is no reason that there should be substantial differences in the number of detected violations between the MON and IIO models since they each support only a single version of the single cancellation axiom.
